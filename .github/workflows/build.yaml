@@ -21,3 +21,6 @@ jobs:
       run: |
         #### AUFGABE COMPILE, DOCKER BUILD UND PUSH
           # hier ist Platz für maven package und docker build
+          mvn package
+          docker login
+          ghcr.io/surprisechan/pet-clinic:latest
